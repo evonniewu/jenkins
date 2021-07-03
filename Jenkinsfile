@@ -28,7 +28,7 @@ pipeline {
 
         stage('test1') {
           steps {
-            build(propagate: true, job: 'test', quietPeriod: 10, wait: true)
+            sleep(time: 10, unit: 'NANOSECONDS')
           }
         }
 
