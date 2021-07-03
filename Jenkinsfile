@@ -45,7 +45,7 @@ pipeline {
 
         stage('deploy1') {
           steps {
-            writeFile(file: 'deploy', text: 'Deploy Completed ', encoding: '8')
+            echo 'Deployed completed'
           }
         }
 
